@@ -1,0 +1,178 @@
+body {
+    background: linear-gradient(to bottom right, #f5f6ff, #fff5f5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+p {
+    text-align: center;
+    color: #777;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #522250;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e05d50;
+}
+
+.upload-icon {
+    width: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.chat-history {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#prediction-result {
+    text-align: center; /* Center align the prediction result */
+    font-weight: bold;  /* Make the prediction text bold */
+    margin-top: 20px;   /* Add some margin for spacing */
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Center align the entire header content */
+    margin: 20px 0;
+}
+
+.logo-and-title {
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Vertically align logo and text */
+}
+
+.logo img {
+    max-width: 100px; /* Set an appropriate width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Add some space between the logo and the text */
+}
+
+h1 {
+    /* font-size: 24px; Adjust font size for the heading */
+    margin: 0;
+}
+
+/* .content {
+    text-align: center;
+} */
+
+
+
+.chat-message {
+    background-color: #f5f5f5;
+    padding: 12px 16px;
+    margin: 10px 0;
+    border-radius: 12px;
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: 90%;
+}
+
+.user-message {
+    background-color: #fdf0ff;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #fffeff;
+    align-self: flex-start;
+}
+
+.chat-history {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
